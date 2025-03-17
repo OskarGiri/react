@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';  // Import the Link component
+
 const ProductDetail = () => {
     return (
         <div>
@@ -5,14 +7,14 @@ const ProductDetail = () => {
                 {/* text  */}
                 <h1 className=" text-xl text-pink-300 font-bold">All Product</h1>
                 {/* Add Product Button  */}
-                <link to={'/addproduct'}>Add Product
-                <button className="px-5 py-2 bg-pink-50 border border-pink-100 rounded-lg">Add Product</button>
-                </link>
+                <Link to={'/addproduct'}>
+                    <button className="px-5 py-2 bg-pink-50 border border-pink-100 rounded-lg">Add Product</button>
+                </Link>
             </div>
 
             {/* table  */}
             <div className="w-full overflow-x-auto">
-                <table className="w-full text-left border border-collapse sm:border-separate border-pink-100 text-pink-400" >
+                <table className="w-full text-left border border-collapse sm:border-separate border-pink-100 text-pink-400">
                     <tbody>
                         <tr>
                             <th scope="col" className="h-12 px-6 text-md border-l first:border-l-0 border-pink-100 text-slate-700 bg-slate-100 font-bold fontPara">S.No.</th>

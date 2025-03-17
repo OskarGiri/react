@@ -14,9 +14,9 @@ import SignUp from './pages/Registration/SignUp';
 import Login from './pages/Registration/Login';
 import UserDashboard from './pages/User/UserDashboard';
 import AdminDashboard from './pages/admin/AdminDashboard';
-import AddProductPage from './components/admin/Addproductpage';
+import AddRoomRentPage from './components/admin/AddRoomRentPage';
 import UpdateProduct from './components/admin/Upadateproduct';
-
+import RoomRentDetail from './components/admin/RoomRentDetail';
 const App = () => {
   return (
     <Router>
@@ -24,13 +24,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/*" element={<Nopage />} />
-        <Route path="/productinfo" element = {<ProductInfo/>} />
+        <Route path="/productinfo/:id" element={<ProductInfo />} />
         <Route path = "/Allroom" element = {<AllRoom/>} />
         <Route path="/signup" element={<SignUp/>} />
         <Route path = "/login" element = {<Login/>} />
         <Route path = "/user-dashboard" element = {<UserDashboard/>} />
         <Route path= "/admin-dashboard" element = {<AdminDashboard/>} />
-        <Route path = "/addproduct" element = {<AddProductPage/>} />
+        <Route path = "/addroom" element = {<AddRoomRentPage/>} />
         <Route path="/updateproduct" element = {<UpdateProduct/>} />
         
       </Routes>
