@@ -62,8 +62,8 @@ const AdminDashboard = () => {
                         </div>
                         {/* Text */}
                         <div className="text-center">
-                            <h1 className="text-lg text-pink-500"><span className="font-bold">Name :</span> Kamal Nayan Upadhyay</h1>
-                            <h1 className="text-lg text-pink-500"><span className="font-bold">Email :</span> test@gmail.com</h1>
+                            <h1 className="text-lg text-pink-500"><span className="font-bold">Name :</span> Oscar Raj Giri</h1>
+                            <h1 className="text-lg text-pink-500"><span className="font-bold">Email :</span> Oscar123@gmail.com</h1>
                         </div>
                     </div>
                 </div>

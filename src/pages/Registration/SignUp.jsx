@@ -32,7 +32,7 @@ const Signup = () => {
                 // Set the success message and reset the form
                 setSuccessMessage("Signup successful! You can now log in.");
                 // Redirect user to login page after a short delay
-                setTimeout(() => navigate('/login'), 2000);
+                setTimeout(() => navigate('/'), 2000);
             }
         } catch (error) {
             setError(error.response?.data?.error || "Something went wrong!"); // Show error if signup fails

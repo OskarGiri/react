@@ -73,10 +73,10 @@ const ProductInfo = () => {
                                 <div className="mb-6">
                                     <h2 className="text-xl font-bold text-gray-700 dark:text-gray-400 mb-4">Contact Information</h2>
                                     <p className="text-gray-700 dark:text-gray-400">
-                                        <strong>Email: </strong>admin@example.com
+                                        <strong>Email: </strong>Oscar123@gmail.com
                                     </p>
                                     <p className="text-gray-700 dark:text-gray-400">
-                                        <strong>Phone Number: </strong>+1234567890
+                                        <strong>Phone Number: </strong>+9823456789
                                     </p>
                                 </div>
 

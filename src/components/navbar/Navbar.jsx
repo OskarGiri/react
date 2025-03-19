@@ -15,7 +15,7 @@ const Navbar = () => {
         <ul className="flex space-x-5 text-white font-medium text-md px-5 ">
             {/* Home */}
             <li>
-                <Link to={'/'}>Home</Link>
+                <Link to={'/home'}>Home</Link>
             </li>
 
             {/* All Product */}
@@ -42,7 +42,7 @@ const Navbar = () => {
             </li>
             {/* logout */}
             {/* <li>
-                logout
+                logoutgit
             </li> */}
 
             
