@@ -114,7 +114,7 @@ const Signup = () => {
 
                 <div>
                     <h2 className='text-black'>
-                        Have an account? <Link className=' text-blue-500 font-bold' to={'/login'}>Login</Link>
+                        Have an account? <Link className=' text-blue-500 font-bold' to={'/'}>Login</Link>
                     </h2>
                 </div>
 

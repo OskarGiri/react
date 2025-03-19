@@ -93,7 +93,9 @@ const loginUser = async (req, res) => {
                 id: user.id,
                 fullName: user.fullName,
                 email: user.email,
-                profilePic: user.profilePic
+                profilePic: user.profilePic,
+                roleId: user.roleId  // Add roleId here
+
             }
         });
     } catch (error) {

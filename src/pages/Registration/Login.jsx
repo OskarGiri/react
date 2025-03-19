@@ -26,14 +26,16 @@ const Login = () => {
 
             if (response.status === 200) {
 
-                const {id } = response.data.user;  // You may need to adjust this according to your API response
+                const {id,roleId } = response.data.user;  // You may need to adjust this according to your API response
                 localStorage.setItem('userId', id);
+                localStorage.setItem("roleId",roleId); // Store roleId
+
 
                 // Set the success message and redirect user to dashboard or homepage
                 setSuccessMessage("Login successful! Redirecting...");
                 setTimeout(() => {
                     // Redirect to the home page or user dashboard after login
-                    navigate('/');
+                    navigate('/home');
                 }, 2000);
             }
         } catch (error) {

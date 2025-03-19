@@ -1,7 +1,15 @@
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import SearchBar from "../searchBar/SearchBar"
 import "../styles/styles.css"
 const Navbar = () => {
+    const [roleId, setRoleId] = useState(null);
+
+    useEffect(() => {
+        const storedRole = localStorage.getItem("roleId");
+        setRoleId(storedRole);
+    }, []);
+
     // navList Data
     const navList = (
         <ul className="flex space-x-5 text-white font-medium text-md px-5 ">
@@ -16,20 +24,22 @@ const Navbar = () => {
             </li>
 
             {/* Signup */}
-            <li>
-                <Link to={'/signup'}>Signup</Link>
-            </li>
+       
 
             {/* User */}
             <li>
                 <Link to={'/user-dashboard'}>Profile</Link>
             </li>
+            {roleId !== "1" && (
+                    <li>
+                        <Link to="/admin-dashboard">Admin</Link>
+                    </li>
+                )}
 
-            {/* Admin */}
-            <li>
-                <Link to={'/admin-dashboard'}>Admin</Link>
+
+<li>
+                <Link to={'/'}>Log out</Link>
             </li>
-
             {/* logout */}
             {/* <li>
                 logout

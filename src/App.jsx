@@ -22,12 +22,13 @@ const App = () => {
     <Router>
       <ScrollTop />
       <Routes>
-        <Route path="/" element={<Homepage />} />
+        <Route path="/" element={<Login />} />
         <Route path="/*" element={<Nopage />} />
         <Route path="/productinfo/:id" element={<ProductInfo />} />
         <Route path = "/Allroom" element = {<AllRoom/>} />
         <Route path="/signup" element={<SignUp/>} />
-        <Route path = "/login" element = {<Login/>} />
+        <Route path="home" element={<Homepage/>} />
+
         <Route path = "/user-dashboard" element = {<UserDashboard/>} />
         <Route path= "/admin-dashboard" element = {<AdminDashboard/>} />
         <Route path = "/addroom" element = {<AddRoomRentPage/>} />
